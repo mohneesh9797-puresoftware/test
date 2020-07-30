@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        docker run --rm --privileged multiarch/qemu-user-static:register
+        docker run --rm --privileged hypriot/qemu-user-static:register
 
     - uses: docker://arm64v8/python:3.7-buster
       with:
