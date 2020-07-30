@@ -15,7 +15,7 @@ jobs:
     - run: |
         docker run --rm --privileged multiarch/qemu-user-static:register --reset
 
-    - uses: docker://quay.io/pypa/manylinux2014_aarch64
+    - uses: docker://arm64v8/python:3.7-buster
       with:
         args: 'uname -a'
 
